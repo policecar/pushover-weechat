@@ -1,13 +1,11 @@
-# James Turnbull <james@lovedthanlost.net>
-# https://github.com/jamtur01/pushover-weechat
-# http://www.kartar.net
-# (See below for LICENSE.)
+# modified version of https://github.com/jamtur01/pushover-weechat
+# ( See below for LICENSE. )
 #
-# pushover for Weechat
+# pushover for weechat
 # ---------------
 #
-# Send private messages and highlights to your Android device via
-# the Pushover service (https://pushover.net/home)
+# Send a pushover message ( cf. https://pushover.net/home ) to your android or ifon 
+# in the event of private messages or highlights occuring in weechat.
 #
 # Install
 # -------
