@@ -1,8 +1,8 @@
 Pushover for Weechat
 ====================
 
-Send private messages and highlights to your Android device via
-the Pushover service (https://pushover.net/home)
+Send a Pushover message ( cf. https://pushover.net ) to your Android or iPhone 
+in the event of private messages or highlights occuring in Weechat.
 
 Install
 -------
@@ -35,7 +35,10 @@ Author
 
 James Turnbull <james@lovedthanlost.net>
 https://github.com/jamtur01/pushover-weechat
-http://www.kartar.net
+
+slightly modified by policecar
+https://github.com/policecar/pushover-weechat
+
 
 License
 -------
