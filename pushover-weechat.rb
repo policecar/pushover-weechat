@@ -1,4 +1,5 @@
 # modified version of https://github.com/jamtur01/pushover-weechat
+# cf. https://github.com/policecar/pushover-weechat
 # ( See below for LICENSE. )
 #
 # pushover for weechat
@@ -45,11 +46,11 @@ require 'net/https'
 SCRIPT_NAME = 'pushover-weechat'
 SCRIPT_AUTHOR = 'James Turnbull <james@lovedthanlost.net>'
 SCRIPT_DESC = 'Send a pushover to your smartfon ( ifon, android ) in case of highlights of private msgs in weechat.'
-SCRIPT_VERSION = '0.1'
+SCRIPT_VERSION = '0.1p'
 SCRIPT_LICENSE = 'APL'
 
 DEFAULTS = {
-  'apikey'          => "eWEPQ0QQrM2A4WBfx8zZoEpYWBAuBa",
+  'apikey'          => "GqpNDuxvJwNaM1cOOvsan4KHm9eCYS",
   'userkey'         => "",
   'interval'        => "60",
 }
