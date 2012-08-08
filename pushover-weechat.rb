@@ -5,8 +5,8 @@
 # pushover for weechat
 # ---------------
 #
-# Send a pushover message ( cf. https://pushover.net/home ) to your android or ifon 
-# in the event of private messages or highlights occuring in weechat.
+# Send a Pushover message ( cf. https://pushover.net/home ) to your Android or iPhone
+# in the event of private messages or highlights occuring in Weechat.
 #
 # Install
 # -------
@@ -45,7 +45,7 @@ require 'net/https'
 
 SCRIPT_NAME = 'pushover-weechat'
 SCRIPT_AUTHOR = 'James Turnbull <james@lovedthanlost.net>'
-SCRIPT_DESC = 'Send a pushover to your smartfon ( ifon, android ) in case of highlights of private msgs in weechat.'
+SCRIPT_DESC = 'Send a Pushover to your smartfon ( iphone, android ) in case of highlights of private msgs in Weechat.'
 SCRIPT_VERSION = '0.1p'
 SCRIPT_LICENSE = 'APL'
 
@@ -87,7 +87,7 @@ def notify(data, signal, signal_data)
       :token   => Weechat.config_get_plugin('apikey'),
       :user    => Weechat.config_get_plugin('userkey'),
       :title   => event,
-      :message => "a msg"   # signal_data
+      :message => "a msg"
     })
     res = Net::HTTP.new(url.host, url.port)
     res.use_ssl = true
