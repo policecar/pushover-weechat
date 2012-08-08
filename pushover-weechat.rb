@@ -79,11 +79,8 @@ def notify(data, signal, signal_data)
 
   @last = Time.now unless @last
 
-  if signal == "weechat_pv"
-    event = "Weechat Private message"
-  elsif signal == "weechat_highlight"
-    event = "Weechat Highlight"
-  end
+  # signal takes values like "weechat_pv", "weechat_highlight"
+  event = "weechat"
 
   if (Time.now - @last) > Weechat.config_get_plugin('interval').to_i
     url = URI.parse("https://api.pushover.net/1/messages")
@@ -92,15 +89,13 @@ def notify(data, signal, signal_data)
       :token   => Weechat.config_get_plugin('apikey'),
       :user    => Weechat.config_get_plugin('userkey'),
       :title   => event,
-      :message => signal_data
+      :message => "a msg"   # signal_data
     })
     res = Net::HTTP.new(url.host, url.port)
     res.use_ssl = true
     res.verify_mode = OpenSSL::SSL::VERIFY_NONE
     res.start {|http| http.request(req) }
     @last = Time.now
-  else
-    Weechat.print("", "pushover-weechat: Skipping notification, too soon since last notification")
   end
 
   return Weechat::WEECHAT_RC_OK
