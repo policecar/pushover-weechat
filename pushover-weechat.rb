@@ -46,7 +46,7 @@ require 'net/https'
 
 SCRIPT_NAME = 'pushover-weechat'
 SCRIPT_AUTHOR = 'James Turnbull <james@lovedthanlost.net>'
-SCRIPT_DESC = 'Send highlights and private messages in channels to your Android or IOS device via Pushover'
+SCRIPT_DESC = 'Send a pushover to your smartfon ( ifon, android ) in case of highlights of private msgs in weechat.'
 SCRIPT_VERSION = '0.1'
 SCRIPT_LICENSE = 'APL'
 
@@ -79,7 +79,6 @@ def notify(data, signal, signal_data)
 
   @last = Time.now unless @last
 
-  # signal takes values like "weechat_pv", "weechat_highlight"
   event = "weechat"
 
   if (Time.now - @last) > Weechat.config_get_plugin('interval').to_i
