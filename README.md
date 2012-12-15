@@ -2,13 +2,14 @@ Pushover for Weechat
 ====================
 
 Send a Pushover message ( cf. https://pushover.net ) to your Android or iPhone 
-in the event of private messages or highlights occuring in Weechat.
+in the event of private messages or highlights occuring in Weechat. In case of 
+a Bitlbee Weechat IM in IRC setup this will notify you of any IM messages.
 
 Install
 -------
 
 Load the pushover-weechat.rb plugin into Weechat. Place it in the
-~/.weechat/ruby directory:
+~/.weechat/ruby or ~/.weechat/ruby/autoload directory:
 
     /ruby load pushover-weechat.rb
 
@@ -36,7 +37,7 @@ Author
 James Turnbull <james@lovedthanlost.net>
 https://github.com/jamtur01/pushover-weechat
 
-slightly modified by policecar
+modified by policecar to send notifications without disclosing sender or message
 https://github.com/policecar/pushover-weechat
 
 
