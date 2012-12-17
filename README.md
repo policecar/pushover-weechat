@@ -2,8 +2,8 @@ Pushover for Weechat
 ====================
 
 Send a Pushover message ( cf. https://pushover.net ) to your Android or iPhone 
-in the event of private messages or highlights occuring in Weechat. In case of 
-a Bitlbee Weechat IM in IRC setup this will notify you of any IM messages.
+in the event of private messages or highlights occuring in Weechat. When used  
+in a Bitlbee XMPP /IM in IRC setup this will notify you of any IM messages.
 
 Install
 -------
